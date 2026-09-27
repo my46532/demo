@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>承九秩荣光 启大学新章 · 山东商业职业技术大学建校90周年</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23A62B2E'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%23FFFFFF' font-family='Georgia,serif' font-weight='700'%3E90%3C/text%3E%3C/svg%3E">
+<meta name="description" content="山东商业职业技术大学（前身山东商业职业技术学院）建校90周年校庆专题。2026年10月17日，诚邀海内外校友相约泉城济南，同庆华诞、共谋发展。">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@600;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#FAF8F3;
+  --paper-2:#F4EFE4;
+  --card:#FFFFFF;
+  --ink:#2C2822;
+  --muted:#6D6558;
+  --red:#A62B2E;
+  --red-deep:#8C2023;
+  --gold:#B98832;
+  --gold-soft:#D9B96A;
+  --line:#E7DFD0;
+  --shadow:0 10px 30px rgba(60,40,20,.06);
+  --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.serif{font-family:"Noto Serif SC","Songti SC","SimSun",serif}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:24px}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+::selection{background:rgba(166,43,46,.14)}
+
+/* ========== 导航 ========== */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:50;
+  background:rgba(250,248,243,.92);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;gap:28px;height:66px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0;padding:4px 0}
+.brand img{width:42px;height:42px;border-radius:50%;flex:none}
+.brand-name{display:flex;flex-direction:column;line-height:1.25}
+.brand-name strong{font-size:15px;letter-spacing:.04em;white-space:nowrap}
+.brand-name span{font-size:11px;color:var(--muted);letter-spacing:.18em}
+.nav-links{display:flex;gap:26px;margin-left:auto}
+.nav-links a{font-size:14px;color:var(--muted);position:relative;padding:6px 2px;transition:color .25s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:width .25s}
+.nav-links a:hover,.nav-links a.active{color:var(--red)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+.nav-toggle svg{width:20px;height:20px}
+
+/* ========== 主视觉 ========== */
+.hero{
+  position:relative;overflow:hidden;
+  padding:150px 0 0;
+  background:
+    radial-gradient(1100px 520px at 50% -120px, rgba(214,142,120,.16), transparent 62%),
+    radial-gradient(900px 460px at 85% 8%, rgba(185,136,50,.10), transparent 60%),
+    var(--paper);
+}
+.hero-orn{position:absolute;inset:0;pointer-events:none}
+.hero-orn::before,.hero-orn::after{
+  content:"";position:absolute;border-radius:50%;
+  border:1px solid rgba(166,43,46,.10);
+}
+.hero-orn::before{width:560px;height:560px;left:-220px;top:-160px}
+.hero-orn::after{width:420px;height:420px;right:-150px;top:80px;border-color:rgba(185,136,50,.14)}
+.hero-inner{position:relative;text-align:center}
+.hero-era{
+  display:inline-flex;align-items:center;gap:14px;
+  font-size:13px;letter-spacing:.42em;color:var(--gold);
+}
+.hero-era::before,.hero-era::after{content:"";width:44px;height:1px;background:var(--gold-soft)}
+.hero-num{
+  font-size:clamp(120px,24vw,250px);
+  line-height:.95;
+  font-weight:900;
+  background:linear-gradient(160deg,var(--red) 8%,#C2433E 46%,var(--gold) 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  letter-spacing:.02em;
+}
+.hero-school{margin-top:6px;font-size:clamp(26px,4.2vw,44px);font-weight:900;letter-spacing:.14em}
+.hero-en{margin-top:8px;font-size:13px;color:var(--muted);letter-spacing:.22em}
+.hero-theme{
+  margin:34px auto 0;max-width:640px;
+  font-size:clamp(20px,3.2vw,30px);font-weight:600;letter-spacing:.10em;
+  color:var(--red);
+}
+.hero-theme small{display:block;margin-top:12px;font-size:13px;color:var(--muted);letter-spacing:.18em;font-weight:400}
+.hero-date{
+  margin-top:26px;display:inline-flex;align-items:center;gap:10px;
+  font-size:15px;color:var(--ink);
+}
+.hero-date b{color:var(--red);font-weight:700}
+.cd{display:flex;justify-content:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.cd-item{
+  min-width:74px;padding:14px 10px 12px;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  box-shadow:var(--shadow);
+}
+.cd-item b{display:block;font-family:"Noto Serif SC",serif;font-size:30px;color:var(--red);line-height:1}
+.cd-item span{display:block;margin-top:6px;font-size:12px;color:var(--muted);letter-spacing:.2em}
+.hero-cta{display:flex;justify-content:center;gap:16px;margin-top:34px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:13px 30px;border-radius:999px;font-size:15px;font-weight:500;
+  border:1px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s;
+}
+.btn-primary{background:var(--red);color:#fff}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px);box-shadow:0 12px 24px rgba(166,43,46,.28)}
+.btn-ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--red);transform:translateY(-2px)}
+.hero-img{margin-top:56px;position:relative}
+.hero-img .img-frame{
+  border-radius:var(--radius);overflow:hidden;box-shadow:0 30px 70px rgba(60,40,20,.14);
+  border:1px solid rgba(185,136,50,.22);
+}
+.hero-img img{width:100%;height:clamp(220px,34vw,430px);object-fit:cover;object-position:center 70%}
+.hero-img figcaption{
+  margin-top:14px;text-align:center;font-size:12px;color:var(--muted);letter-spacing:.12em;
+}
+
+/* ========== 通用区块 ========== */
+section{padding:96px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 58px}
+.section-head .kicker{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:13px;letter-spacing:.34em;color:var(--gold);
+}
+.section-head .kicker::before,.section-head .kicker::after{content:"";width:30px;height:1px;background:var(--gold-soft)}
+.section-head h2{margin-top:16px;font-size:clamp(26px,3.6vw,38px);font-weight:900;letter-spacing:.08em}
+.section-head p{margin-top:14px;color:var(--muted);font-size:15px}
+
+/* ========== 校庆公告 ========== */
+#announce{background:var(--paper-2)}
+.ann-grid{display:grid;grid-template-columns:1fr 360px;gap:56px;align-items:start}
+.ann-text h3{font-size:22px;font-weight:700;letter-spacing:.06em;color:var(--red)}
+.ann-tagline{
+  margin-top:18px;padding:18px 22px;border-radius:14px;
+  background:var(--card);border:1px solid var(--line);
+  font-family:"Noto Serif SC",serif;font-size:19px;color:var(--ink);letter-spacing:.08em;
+}
+.ann-tagline b{color:var(--red)}
+.ann-text p{margin-top:16px;color:var(--muted);font-size:15px}
+.ann-text .note{margin-top:14px;font-size:12px;color:var(--muted)}
+.ann-link{display:inline-flex;align-items:center;gap:8px;margin-top:24px;color:var(--red);font-size:15px;font-weight:500;border-bottom:1px solid rgba(166,43,46,.35);padding:8px 4px 4px;min-height:44px}
+.ann-post img{width:100%;border-radius:14px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.ann-post figcaption{margin-top:12px;font-size:12px;color:var(--muted);text-align:center}
+
+/* ========== 学校简介 ========== */
+.intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.intro-copy h3{font-size:20px;font-weight:700;letter-spacing:.05em}
+.intro-copy p{margin-top:18px;color:var(--muted);font-size:15.5px}
+.motto{
+  margin-top:26px;padding:20px 26px;border-radius:14px;
+  background:linear-gradient(120deg,rgba(166,43,46,.06),rgba(185,136,50,.07));
+  border:1px solid rgba(166,43,46,.16);
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+}
+.motto b{font-family:"Noto Serif SC",serif;font-size:22px;color:var(--red);letter-spacing:.3em}
+.motto span{font-size:13px;color:var(--muted)}
+.intro-img{position:relative}
+.intro-img .img-frame{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.intro-img img{width:100%;height:460px;object-fit:cover;object-position:center 62%}
+.intro-img figcaption{margin-top:14px;font-size:12px;color:var(--muted);text-align:center;letter-spacing:.1em}
+
+/* ========== 历史沿革（时间轴） ========== */
+#history{background:var(--paper-2)}
+.tl{max-width:900px;margin-inline:auto}
+.tl-row{display:grid;grid-template-columns:150px 44px 1fr;align-items:center;min-height:118px}
+.tl-time{text-align:right;padding-right:18px}
+.tl-time b{font-family:"Noto Serif SC",serif;font-size:26px;color:var(--red);letter-spacing:.04em}
+.tl-time span{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.tl-axis{position:relative;height:100%;align-self:stretch}
+.tl-axis .line{position:absolute;left:50%;top:0;bottom:0;width:2px;transform:translateX(-50%);background:linear-gradient(var(--gold-soft),rgba(185,136,50,.18))}
+.tl-row:first-child .tl-axis .line{top:50%}
+.tl-row:last-child .tl-axis .line{bottom:50%}
+.tl-dot{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:15px;height:15px;border-radius:50%;background:var(--card);
+  border:3px solid var(--red);box-shadow:0 0 0 5px rgba(166,43,46,.10);
+}
+.tl-dot.gold{border-color:var(--gold);box-shadow:0 0 0 5px rgba(185,136,50,.14)}
+.tl-body{padding-left:10px}
+.tl-body h4{font-size:19px;font-weight:700;letter-spacing:.03em}
+.tl-body p{margin-top:6px;color:var(--muted);font-size:14.5px;max-width:560px}
+.tl-branch{
+  margin:40px auto 0;max-width:900px;padding:20px 28px;border-radius:14px;
+  background:var(--card);border:1px solid var(--line);
+  font-size:14px;color:var(--muted);
+}
+.tl-branch b{color:var(--red)}
+
+/* ========== 今日商大 ========== */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.stat{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:30px 18px;text-align:center;box-shadow:var(--shadow);
+}
+.stat b{display:block;font-family:"Noto Serif SC",serif;font-size:clamp(28px,3.4vw,38px);color:var(--red);line-height:1.1}
+.stat b small{font-size:.5em;color:var(--gold);font-weight:600}
+.stat span{display:block;margin-top:10px;font-size:13px;color:var(--muted);letter-spacing:.06em}
+.achv{display:grid;grid-template-columns:1fr 1fr;gap:12px 34px;margin-top:56px}
+.achv li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:var(--ink);font-size:14.5px;padding:9px 0}
+.achv svg{width:18px;height:18px;flex:none;margin-top:3px;color:var(--gold)}
+.achv-title{margin-top:56px;font-size:15px;color:var(--gold);letter-spacing:.2em;text-align:center}
+.achv-row{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:20px}
+.achv-card{background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:20px 14px;text-align:center}
+.achv-card b{display:block;font-family:"Noto Serif SC",serif;font-size:22px;color:var(--red)}
+.achv-card span{display:block;margin-top:6px;font-size:12.5px;color:var(--muted)}
+
+/* ========== 杰出校友 ========== */
+#alumni{background:var(--paper-2)}
+.alu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.alu-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:transform .3s,box-shadow .3s;box-shadow:var(--shadow);
+}
+.alu-card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(60,40,20,.12)}
+.alu-photo{aspect-ratio:4/5;overflow:hidden;background:var(--paper-2)}
+.alu-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%;transition:transform .6s}
+.alu-card:hover .alu-photo img{transform:scale(1.05)}
+.alu-body{padding:22px 22px 26px}
+.alu-body h4{font-size:20px;font-weight:700;letter-spacing:.04em}
+.alu-meta{margin-top:6px;font-size:13px;color:var(--muted);letter-spacing:.04em}
+.alu-tag{
+  display:inline-block;margin-top:12px;padding:3px 12px;border-radius:999px;
+  font-size:12px;letter-spacing:.08em;color:var(--red);
+  border:1px solid rgba(166,43,46,.3);background:rgba(166,43,46,.05);
+}
+.alu-body p{margin-top:12px;color:var(--muted);font-size:14px;line-height:1.8}
+
+/* ========== 校庆祝福 ========== */
+.bs-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.bs-event{display:flex;gap:20px;padding:20px 0;border-bottom:1px dashed var(--line)}
+.bs-event:first-child{padding-top:0}
+.bs-event:last-child{border-bottom:none}
+.bs-date{flex:none;width:110px;text-align:center;align-self:center}
+.bs-date b{display:block;font-family:"Noto Serif SC",serif;font-size:22px;color:var(--red)}
+.bs-date span{font-size:12px;color:var(--muted)}
+.bs-event h4{font-size:16.5px;font-weight:700;letter-spacing:.03em}
+.bs-event p{margin-top:6px;font-size:13.5px;color:var(--muted)}
+.form-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 34px 38px;box-shadow:var(--shadow);
+}
+.form-card h3{font-size:20px;font-weight:700;letter-spacing:.05em}
+.form-card .sub{margin-top:8px;font-size:13px;color:var(--muted)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.f-field label{display:block;font-size:13px;color:var(--muted);margin-bottom:8px}
+.f-field input,.f-field select,.f-field textarea{
+  width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;
+  background:var(--paper);font-family:inherit;font-size:14px;color:var(--ink);
+  outline:none;transition:border-color .25s,box-shadow .25s;
+}
+.f-field input:focus,.f-field select:focus,.f-field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(185,136,50,.14)}
+.f-field textarea{min-height:120px;resize:vertical}
+.f-submit{margin-top:24px;width:100%;justify-content:center}
+.form-note{margin-top:14px;font-size:12px;color:var(--muted);text-align:center}
+
+/* ========== 页脚 ========== */
+footer{background:#33291F;color:#E9E1D2;padding:64px 0 34px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:44px}
+.foot-brand{display:flex;gap:14px;align-items:flex-start}
+.foot-brand img{width:52px;height:52px;border-radius:50%}
+.foot-brand h4{font-size:17px;font-weight:700;letter-spacing:.05em}
+.foot-brand p{margin-top:10px;font-size:13px;color:rgba(233,225,210,.72);line-height:1.9}
+.foot h5{font-size:13px;letter-spacing:.2em;color:var(--gold-soft);margin-bottom:16px}
+.foot ul{list-style:none}
+.foot li{margin-bottom:10px;font-size:13.5px;color:rgba(233,225,210,.82)}
+.foot a{color:rgba(233,225,210,.82);border-bottom:1px solid rgba(233,225,210,.25);transition:color .25s}
+.foot a:hover{color:#fff}
+.foot-src{margin-top:30px;padding-top:20px;border-top:1px solid rgba(233,225,210,.16);font-size:11.5px;color:rgba(233,225,210,.55);line-height:1.9}
+.foot-copy{margin-top:18px;font-size:12px;color:rgba(233,225,210,.5);text-align:center;letter-spacing:.08em}
+
+/* ========== 提示条 ========== */
+.toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:var(--ink);color:#fff;padding:13px 26px;border-radius:999px;
+  font-size:14px;opacity:0;pointer-events:none;transition:opacity .35s,transform .35s;z-index:99;
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* ========== 滚动显现 ========== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+
+/* ========== 响应式 ========== */
+@media (max-width:960px){
+  .nav-links{
+    position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    padding:10px 24px 18px;display:none;box-shadow:var(--shadow);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 4px;border-bottom:1px dashed var(--line)}
+  .nav-links a:last-child{border-bottom:none}
+  .nav-toggle{display:flex;align-items:center;justify-content:center}
+  .ann-grid{grid-template-columns:1fr;gap:36px}
+  .ann-post{max-width:400px;margin-inline:auto}
+  .intro-grid{grid-template-columns:1fr;gap:44px}
+  .intro-img img{height:380px}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .alu-grid{grid-template-columns:repeat(2,1fr)}
+  .achv-row{grid-template-columns:repeat(3,1fr)}
+  .bs-grid{grid-template-columns:1fr;gap:52px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:36px}
+}
+@media (max-width:560px){
+  section{padding:72px 0}
+  body{font-size:16px}
+  .f-field input,.f-field select,.f-field textarea{font-size:16px}
+  .tl-row{grid-template-columns:88px 36px 1fr;min-height:132px}
+  .tl-time b{font-size:21px}
+  .alu-grid{grid-template-columns:1fr}
+  .achv-row{grid-template-columns:repeat(2,1fr)}
+  .stat{padding:22px 12px}
+  .f-row{grid-template-columns:1fr}
+  .bs-date{width:84px}
+  .foot-grid{grid-template-columns:1fr}
+  .brand-name span{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <img src="assets/school-emblem.jpg" alt="山东商业职业技术大学校徽">
+      <span class="brand-name">
+        <strong>山东商业职业技术大学</strong>
+        <span>建校90周年 · 1936—2026</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="页面导航">
+      <a href="#announce" class="active">校庆公告</a>
+      <a href="#intro">学校简介</a>
+      <a href="#history">历史沿革</a>
+      <a href="#today">今日商大</a>
+      <a href="#alumni">杰出校友</a>
+      <a href="#blessing">校庆祝福</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="展开导航菜单" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== 主视觉 ===== -->
+<section class="hero" aria-label="校庆主视觉">
+  <div class="hero-orn" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <span class="hero-era">一九三六 · 二〇二六</span>
+    <div class="hero-num" aria-label="90">90</div>
+    <h1 class="hero-school serif">山东商业职业技术大学</h1>
+    <p class="hero-en">SHANDONG UNIVERSITY OF COMMERCE AND TECHNOLOGY</p>
+    <p class="hero-theme serif">承九秩荣光 · 启大学新章<small>建校90周年校庆主题</small></p>
+    <p class="hero-date">校庆日：2026年<b>10月17日</b>　·　相约泉城济南</p>
+    <div class="cd" id="cd" aria-label="距离校庆日倒计时">
+      <div class="cd-item"><b id="cdDays">--</b><span>天</span></div>
+      <div class="cd-item"><b id="cdHours">--</b><span>时</span></div>
+      <div class="cd-item"><b id="cdMins">--</b><span>分</span></div>
+      <div class="cd-item"><b id="cdSecs">--</b><span>秒</span></div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#announce">查看校庆公告</a>
+      <a class="btn btn-ghost" href="#blessing">为母校送祝福</a>
+    </div>
+  </div>
+  <figure class="hero-img wrap">
+    <div class="img-frame"><img src="assets/campus-banner.jpg" alt="山东商业职业技术大学图书馆秋景，楼顶镌刻校训“尚德蕴能 日精日新”"></div>
+    <figcaption>九十载商脉绵延 · 新时代再启新程</figcaption>
+  </figure>
+</section>
+
+<!-- ===== 校庆公告 ===== -->
+<section id="announce">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">校庆公告 · ANNOUNCEMENT</span>
+      <h2>建校90周年校庆公告</h2>
+      <p>华诞盛会，诚邀海内外广大校友、社会各界人士相约泉城济南，同庆华诞、共谋发展。</p>
+    </div>
+    <div class="ann-grid">
+      <div class="ann-text reveal">
+        <h3>山东商业职业技术大学建校90周年校庆公告（第二号）</h3>
+        <p style="margin-top:10px;color:var(--muted);font-size:13px">发布于 2026年9月14日</p>
+        <p>2026年10月17日，山东商业职业技术大学将迎来建校90周年华诞。海内外校友、社会各界人士和全校师生员工热切关注、鼎力支持，校庆筹备工作有序推进。</p>
+        <div class="ann-tagline">校庆主题：<b>承九秩荣光，启大学新章</b></div>
+        <p>校庆标识以数字"90"与学校英文简称 SUCT 融为一体：开口的"0"打破圆环的封闭，既是学校开放办学、拥抱变革的精神写照，也寓意九十载岁月并非终点，而是通向未来的崭新入口；整体造型以红金渐变铺陈，既承续厚重的历史底蕴，又焕发与时俱进的青春活力。</p>
+        <p>欢迎关注校庆专题网站，及时了解校庆工作动态，共赴这场跨越九十年时光的约定。</p>
+        <p class="note">注：校庆标识的日常管理和使用授权由山东商业职业技术大学负责，任何组织和个人未经授权不得擅自使用。</p>
+        <a class="ann-link" href="https://www.sict.edu.cn/jg_znxq/" target="_blank" rel="noopener">
+          进入校庆专题网站
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+      <figure class="ann-post reveal">
+        <img src="assets/anniversary-poster.jpg" alt="山东商业职业技术大学建校90周年校庆公告（第二号）海报">
+        <figcaption>建校90周年校庆公告（第二号）</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- ===== 学校简介 ===== -->
+<section id="intro">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">学校简介 · ABOUT</span>
+      <h2>九十年商脉 · 一代代商大人</h2>
+      <p>从1936年济南私立惠鲁工商职业学校，到今天的职业本科大学——立德树人，兴商润民。</p>
+    </div>
+    <div class="intro-grid">
+      <div class="intro-copy reveal">
+        <h3>省属公办本科层次职业学校</h3>
+        <p>山东商业职业技术大学坐落于泉城济南，实行省教育厅和省商业集团有限公司共同管理、以省商业集团有限公司为主的管理体制。办学历史可追溯到1936年创办的济南私立惠鲁工商职业学校，历经多次更名、合并与停办，1999年经教育部批准建立山东商业职业技术学院，2026年6月正式设立山东商业职业技术大学。</p>
+        <p>经过90年的积淀，学校以"立德树人 兴商润民"为使命，坚持为社会用人需求服务、为学生就业成才服务，软商硬做、冷链暖心，形成"商工融合、数智赋能、产教共生"的专业群特色发展路径，全力打造特色鲜明、国内一流、国际知名的高水平商业职业技术大学。</p>
+        <p>学校现有彩石、莱芜两个校区，占地面积1232.95亩，建筑面积43.43万平方米，馆藏图书188万册；设有15个教学单位、44个高职专科招生专业和5个职业本科招生专业，在校生1.3万人，专任教师745人，毕业去向落实率年均97.5%以上。</p>
+        <div class="motto">
+          <b>尚德蕴能，日精日新</b>
+          <span>—— 校训 · 九十载不变的商大精神</span>
+        </div>
+      </div>
+      <figure class="intro-img reveal">
+        <div class="img-frame"><img src="assets/campus-main-building.jpg" alt="山东商业职业技术大学主楼，楼顶镌刻金色校训“尚德蕴能 日精日新”"></div>
+        <figcaption>主楼上镌刻的校训：尚德蕴能 日精日新</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- ===== 历史沿革 ===== -->
+<section id="history">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">历史沿革 · HISTORY</span>
+      <h2>九十载岁月长河</h2>
+      <p>两脉源头交汇，数次更名变迁，涵泳孕育出今天的山东商业职业技术大学。</p>
+    </div>
+    <div class="tl">
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>1936</b><span>办学肇始</span></div>
+        <div class="tl-axis"><div class="line"></div><div class="tl-dot"></div></div>
+        <div class="tl-body"><h4>济南私立惠鲁工商职业学校创办</h4><p>商界、教育界有识之士振兴民族商业精神，在济南创办学校，商脉由此发端。</p></div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>1945</b><span>另一脉源头</span></div>
+        <div class="tl-axis"><div class="line"></div><div class="tl-dot gold"></div></div>
+        <div class="tl-body"><h4>青岛私立商科职业学校创办</h4><p>与济南一脉同源于二十世纪初的私立商业学校，两脉相承、交互共生。</p></div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>1961</b><span>商科定型</span></div>
+        <div class="tl-axis"><div class="line"></div><div class="tl-dot"></div></div>
+        <div class="tl-body"><h4>山东省济南商业学校</h4><p>学校移交山东省商业厅改建，坚守商科办学方向，奠定发展基石。</p></div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>1999</b><span>高职新篇</span></div>
+        <div class="tl-axis"><div class="line"></div><div class="tl-dot"></div></div>
+        <div class="tl-body"><h4>山东商业职业技术学院成立</h4><p>经教育部批准，在山东商业职工大学与山东省商业学校基础上组建，开启高职教育新篇章。</p></div>
+      </div>
+      <div class="tl-row reveal">
+        <div class="tl-time"><b>2026</b><span>大学新章</span></div>
+        <div class="tl-axis"><div class="line"></div><div class="tl-dot"></div></div>
+        <div class="tl-body"><h4>山东商业职业技术大学 · 建校90周年</h4><p>升格本科层次职业学校，迎来建校90周年华诞——承九秩荣光，启大学新章。</p></div>
+      </div>
+    </div>
+    <p class="tl-branch reveal"><b>两脉相承：</b>济南私立惠鲁工商职业学校（1936）与青岛私立商科职业学校（1945）两脉源头，历经济南私立惠鲁商业职业学校、山东省合作干部学校、山东财经学院中专部、山东省商业学校、山东省商业职工大学等办学时期，最终汇聚为今天的山东商业职业技术大学。</p>
+  </div>
+</section>
+<!-- ===== 今日商大 ===== -->
+<section id="today">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">今日商大 · TODAY</span>
+      <h2>九十年积淀 · 高质量发展的商大</h2>
+      <p>两次入选中国特色高水平高职院校，教学质量、办学特色得到社会各界广泛肯定。</p>
+    </div>
+    <div class="stat-grid reveal">
+      <div class="stat"><b>90<small>年</small></b><span>办学历史</span></div>
+      <div class="stat"><b>2<small>次</small></b><span>入选中国特色高水平高职院校</span></div>
+      <div class="stat"><b>1.3<small>万</small></b><span>在校学生</span></div>
+      <div class="stat"><b>745<small>人</small></b><span>专任教师</span></div>
+      <div class="stat"><b>1232.95<small>亩</small></b><span>两校区占地面积</span></div>
+      <div class="stat"><b>188<small>万册</small></b><span>馆藏图书</span></div>
+      <div class="stat"><b>97.5<small>%+</small></b><span>毕业去向落实率（年均）</span></div>
+      <div class="stat"><b>5<small>个</small></b><span>职业本科招生专业</span></div>
+    </div>
+    <ul class="achv reveal">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>国家优质校、国家示范校优秀建设单位</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国职业教育先进单位</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国深化创新创业教育改革示范高校</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国毕业生就业典型经验高校</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>国家级创新创业学院、全国高校实践育人创新创业基地</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国第一批示范性虚拟仿真实训基地建设单位</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>首批现代学徒制试点单位</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国第一批示范性职教集团培育项目牵头单位</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国职业院校实习管理50强、教学管理50强</li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>全国职业院校校园文化建设"一校一品"学校</li>
+    </ul>
+    <p class="achv-title">九十载硕果 · KEY ACHIEVEMENTS</p>
+    <div class="achv-row reveal">
+      <div class="achv-card"><b>14项</b><span>国家级教学成果奖（一等奖1项、二等奖13项）</span></div>
+      <div class="achv-card"><b>4+13</b><span>国家级、省级高水平专业群</span></div>
+      <div class="achv-card"><b>38个</b><span>市厅级以上科研平台</span></div>
+      <div class="achv-card"><b>13项</b><span>国家863及重点研发等课题</span></div>
+      <div class="achv-card"><b>700+</b><span>授权发明专利、软著等</span></div>
+      <div class="achv-card"><b>56项</b><span>主持参与国家、行业标准</span></div>
+    </div>
+  </div>
+</section>
+<!-- ===== 杰出校友 ===== -->
+<section id="alumni">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">杰出校友 · ALUMNI</span>
+      <h2>商大之光 · 历届优秀毕业生</h2>
+      <p>一代代商大人从校园走向各行各业，在不同的赛道上绽放光芒，成为母校最闪亮的名片。</p>
+    </div>
+    <div class="alu-grid">
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-qi-xuesen.jpg" alt="杰出校友戚学森"></div>
+        <div class="alu-body">
+          <h4>戚学森</h4>
+          <p class="alu-meta">1976届 · 财会专业</p>
+          <span class="alu-tag">民政 · 公益</span>
+          <p>曾任民政部管理干部学院院长、民政职业大学党委书记、民政部办公厅副主任（正厅级）、中国社会福利基金会理事长等职，长期从事民政管理与社会福利事业。</p>
+        </div>
+      </article>
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-niu-zhiqun.jpg" alt="杰出校友牛志群"></div>
+        <div class="alu-body">
+          <h4>牛志群</h4>
+          <p class="alu-meta">2016届 · 食品生物技术专业</p>
+          <span class="alu-tag">新零售 · 供应链</span>
+          <p>从金锣集团市场经理到美团快驴事业部华北区采购经理、华北区鲜肉对接人，以敏锐的市场嗅觉与卓越的采购策略成为供应链领域的中坚力量。</p>
+        </div>
+      </article>
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-yang-fan.jpg" alt="杰出校友杨帆"></div>
+        <div class="alu-body">
+          <h4>杨帆</h4>
+          <p class="alu-meta">2011届 · 大数据技术专业</p>
+          <span class="alu-tag">互联网 · 技术</span>
+          <p>从商职院学子成长为阿里巴巴蚂蚁金服高级工程师，先后在中科院、畅游、IBM、京东实习，以自律进取完成从技术新兵到行业翘楚的跨越。</p>
+        </div>
+      </article>
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-wang-lei.jpg" alt="杰出校友王蕾"></div>
+        <div class="alu-body">
+          <h4>王蕾</h4>
+          <p class="alu-meta">2017届 · 老年服务与管理专业</p>
+          <span class="alu-tag">基层 · 养老</span>
+          <p>扎根养老一线，从普通护理员成长为基层主管，荣获全国"高校毕业生基层就业卓越奖学（教）金"、"山东省技术能手"、"济南市最美养老护理员"等荣誉，被认定为济南市D类人才。</p>
+        </div>
+      </article>
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-he-tianlang.jpg" alt="杰出校友何天朗"></div>
+        <div class="alu-body">
+          <h4>何天朗</h4>
+          <p class="alu-meta">计算机应用技术专业</p>
+          <span class="alu-tag">信息技术 · 教育</span>
+          <p>考取华为高级网络工程师、红帽CE工程师等高含金量认证，就职于济南博赛网络技术有限公司，兼具网络实施工程师与高校课程讲师双重角色。</p>
+        </div>
+      </article>
+      <article class="alu-card reveal">
+        <div class="alu-photo"><img src="assets/alumni-yang-huimin.jpg" alt="杰出校友杨慧敏"></div>
+        <div class="alu-body">
+          <h4>杨慧敏</h4>
+          <p class="alu-meta">2017届 · 食品检测及管理专业</p>
+          <span class="alu-tag">市场监管 · 食安</span>
+          <p>就职于泰安市泰山区市场监督管理局，以扎实的专业功底投身食品安全检测与监管一线，为守护人民群众"舌尖上的安全"贡献力量。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ===== 校庆祝福 ===== -->
+<section id="blessing">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">校庆祝福 · BLESSING</span>
+      <h2>重聚绿茵场 · 再续商院情</h2>
+      <p>校庆筹备工作正有序推进，欢迎广大校友返校参访、重温青春记忆，也期待您的祝福。</p>
+    </div>
+    <div class="bs-grid">
+      <div class="reveal">
+        <h3 style="font-size:18px;font-weight:700;letter-spacing:.05em;margin-bottom:6px">校庆系列活动</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:14px">近期校庆动态一览</p>
+        <div class="bs-event">
+          <div class="bs-date"><b>2026.05</b><span>五月</span></div>
+          <div><h4>校友企业家返校参访活动</h4><p>二十余位优秀校友代表走进莱芜新校区，实地见证母校新校区建设成果与发展新风貌。</p></div>
+        </div>
+        <div class="bs-event">
+          <div class="bs-date"><b>2026.05</b><span>五月</span></div>
+          <div><h4>校友足球邀请赛</h4><p>"重聚绿茵场，再续商院情"，制冷、计算机等专业往届校友重返母校，与师生联队同场竞技。</p></div>
+        </div>
+        <div class="bs-event">
+          <div class="bs-date"><b>2026.09</b><span>九月</span></div>
+          <div><h4>学校领导走访北京校友</h4><p>看望戚学森、惠增玉、章华、吴新松等杰出校友，凝聚校友力量，共庆母校90华诞。</p></div>
+        </div>
+        <div class="bs-event">
+          <div class="bs-date"><b>2026.10</b><span>十月</span></div>
+          <div><h4>建校90周年华诞庆典</h4><p>2026年10月17日，诚邀海内外校友相约泉城济南，同庆华诞、共叙情谊、共谋发展。</p></div>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>为母校送上祝福</h3>
+        <p class="sub">每一句祝福，都将汇入九十周年校庆的纪念长卷。</p>
+        <form id="blessForm">
+          <div class="f-row">
+            <div class="f-field">
+              <label for="fName">您的称呼</label>
+              <input id="fName" type="text" placeholder="如：1998届校友 张明" maxlength="30">
+            </div>
+            <div class="f-field">
+              <label for="fRole">您的身份</label>
+              <select id="fRole">
+                <option>在校学生</option>
+                <option>校友</option>
+                <option>教职工</option>
+                <option>社会各界朋友</option>
+              </select>
+            </div>
+          </div>
+          <div class="f-field" style="margin-top:16px">
+            <label for="fMsg">祝福语</label>
+            <textarea id="fMsg" placeholder="写下您对母校90华诞的祝福……" maxlength="200"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary f-submit">送出祝福</button>
+          <p class="form-note">本页为校庆纪念展示页面，祝福内容仅在本机演示。</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/school-emblem.jpg" alt="山东商业职业技术大学校徽">
+        <div>
+          <h4>山东商业职业技术大学</h4>
+          <p>尚德蕴能，日精日新。<br>立德树人，兴商润民。<br>诚邀海内外校友相约泉城济南，同庆华诞、共谋发展。</p>
+        </div>
+      </div>
+      <div class="foot">
+        <h5>快捷链接</h5>
+        <ul>
+          <li><a href="https://www.sict.edu.cn/jg_znxq/" target="_blank" rel="noopener">校庆专题网站</a></li>
+          <li><a href="https://www.sict.edu.cn/" target="_blank" rel="noopener">学校官方网站</a></li>
+          <li><a href="#announce">校庆公告</a></li>
+          <li><a href="#alumni">杰出校友</a></li>
+          <li><a href="#blessing">校庆祝福</a></li>
+        </ul>
+      </div>
+      <div class="foot">
+        <h5>联系我们</h5>
+        <ul>
+          <li>地址：山东省济南市旅游路4516号</li>
+          <li>校区：彩石校区 · 莱芜校区</li>
+          <li>办学层次：本科层次职业学校</li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-src">
+      资料来源：山东商业职业技术大学官方网站《学校概况》（2026年8月）、建校90周年校庆公告（第二号，2026年9月14日）、校庆专题网站新闻动态及各系部优秀毕业生报道（2024—2026）。校训、校徽及校庆标识版权归山东商业职业技术大学所有；校园与校友图片来自学校官网及公开报道，仅用于校庆纪念展示，版权归原作者所有。
+    </p>
+    <p class="foot-copy">1936—2026 · 山东商业职业技术大学建校90周年 · 本页面为校庆纪念展示页</p>
+  </div>
+</footer>
+
+</main>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 倒计时至 2026-10-17 00:00:00 (+08:00) */
+  var target = new Date("2026-10-17T00:00:00+08:00").getTime();
+  var cdDays=document.getElementById("cdDays"), cdHours=document.getElementById("cdHours"),
+      cdMins=document.getElementById("cdMins"), cdSecs=document.getElementById("cdSecs");
+  function pad(n){return n<10?"0"+n:""+n;}
+  function tick(){
+    var diff=target-Date.now();
+    if(diff<=0){ cdDays.textContent="00";cdHours.textContent="00";cdMins.textContent="00";cdSecs.textContent="00";return; }
+    var s=Math.floor(diff/1000);
+    cdDays.textContent=pad(Math.floor(s/86400));
+    cdHours.textContent=pad(Math.floor(s%86400/3600));
+    cdMins.textContent=pad(Math.floor(s%3600/60));
+    cdSecs.textContent=pad(s%60);
+  }
+  tick();setInterval(tick,1000);
+
+  /* 导航：移动端展开 + 滚动高亮 */
+  var navToggle=document.getElementById("navToggle"), navLinks=document.getElementById("navLinks");
+  navToggle.addEventListener("click",function(){
+    var open=navLinks.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded",open?"true":"false");
+  });
+  navLinks.addEventListener("click",function(e){
+    if(e.target.tagName==="A"){navLinks.classList.remove("open");navToggle.setAttribute("aria-expanded","false");}
+  });
+  var secLinks=Array.prototype.slice.call(navLinks.querySelectorAll("a"));
+  var secEls=secLinks.map(function(a){return document.querySelector(a.getAttribute("href"));});
+  var spy=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        var id="#"+en.target.id;
+        secLinks.forEach(function(a){a.classList.toggle("active",a.getAttribute("href")===id);});
+      }
+    });
+  },{rootMargin:"-40% 0px -55% 0px"});
+  secEls.forEach(function(el){if(el)spy.observe(el);});
+
+  /* 滚动显现 */
+  var reveals=document.querySelectorAll(".reveal");
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");io.unobserve(en.target);}});
+  },{threshold:0.12});
+  reveals.forEach(function(el){io.observe(el);});
+
+  /* 祝福表单 */
+  var form=document.getElementById("blessForm");
+  var toast=document.getElementById("toast");
+  function showToast(msg){
+    toast.textContent=msg;toast.classList.add("show");
+    clearTimeout(showToast._t);
+    showToast._t=setTimeout(function(){toast.classList.remove("show");},3200);
+  }
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var name=document.getElementById("fName").value.trim();
+    var msg=document.getElementById("fMsg").value.trim();
+    if(!name||!msg){showToast("请填写称呼与祝福语后再提交");return;}
+    var tpl=name+" 的祝福已送达母校——感谢您对山东商业职业技术大学的深情厚谊！";
+    showToast(tpl);
+    form.reset();
+  });
+})();
+</script>
+</body>
+</html>
